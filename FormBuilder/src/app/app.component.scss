@@ -1,0 +1,12 @@
+[layout-root] {
+    box-sizing: border;
+    width: 100%;
+    height: 100%;
+
+    [main-content] {
+        box-sizing: border;
+        width: 100%;
+        height: 100%;
+        padding: 0.5rem;
+    }
+}

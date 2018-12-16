@@ -1,0 +1,25 @@
+<div layout-root fxLayout="row">
+    <div tool-pallete fxLayout="column" fxFlex="20">
+        <mat-accordion>
+            <mat-expansion-panel *ngFor="let group of componentGroups">
+                <mat-expansion-panel-header>
+                    <span>{{ group.name }}</span>
+                </mat-expansion-panel-header>
+                <mat-list dense>
+                    <div *ngFor="let item of group.components">
+                        <div *ngIf="item.components;else listItem">
+                            <h2 matSubheader>{{ item.name }}</h2>
+                            <mat-list-item mat-line role="option" *ngFor="let subComp of item.components">{{ subComp.name }}</mat-list-item>
+                        </div>
+                        <ng-template #listItem>
+                            <mat-list-item mat-line role="option">{{ item.name }}</mat-list-item>
+                        </ng-template>
+                    </div>
+                </mat-list>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+    <div fxFlex>
+        <app-rete layout-root></app-rete>
+    </div>
+</div>

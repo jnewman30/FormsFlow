@@ -1,0 +1,20 @@
+<td-layout layout-root mode="side" opened="true" fxLayoutAlign="column">
+    <td-navigation-drawer sidenavTitle="Form Builder">
+        <mat-nav-list>
+            <mat-list-item [routerLink]="['/']">Home</mat-list-item>
+            <mat-list-item [routerLink]="['builder']">Form Builder</mat-list-item>
+            <mat-list-item [routerLink]="['flow']">Flow Editor</mat-list-item>
+            <mat-list-item [routerLink]="['renderer']">Form Renderer</mat-list-item>
+        </mat-nav-list>
+    </td-navigation-drawer>
+    <td-layout-nav logo="assets:teradata" toolbarTitle="Form Builder" navigationRoute="/">
+        <button mat-icon-button td-menu-button tdLayoutToggle>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <div main-content>
+            <router-outlet></router-outlet>
+        </div>
+    </td-layout-nav>
+</td-layout>
+
+
