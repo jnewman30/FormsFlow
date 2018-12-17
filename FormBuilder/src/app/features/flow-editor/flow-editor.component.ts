@@ -15,12 +15,17 @@ export class FlowEditorComponent implements OnInit {
     ngOnInit() {
     }
 
-    onDropComponent(event: any): void {
+    onDropComponent(event: { dragData: any, nativeEvent: DragEvent }): void {
+        console.log('Editor OnDrop', event);
+
         if (!event.dragData) {
             return;
         }
+        const x = event.nativeEvent.layerX || 100;
+        const y = event.nativeEvent.layerY || 200;
+
         const component = event.dragData.component;
-        this.editor.addNode(component);
+        this.editor.addNode(component, x, y);
     }
 
     async run(): Promise<void> {

@@ -84,15 +84,15 @@ export class ReteComponent implements AfterViewInit {
         this.editor.trigger('process');
     }
 
-    async addNode(name: string, mousePlaced: boolean = true): Promise<void> {
+    async addNode(name: string, x: Number = 200, y: Number = 200): Promise<void> {
         const component = this.components.find(c => c.name === name);
-        console.log('Adding Component', component);
         if (!component) {
             return;
         }
         const node = await component.createNode();
-        this.editor.addNode(node, mousePlaced);
-        this.editor.view.resize();
+        node.position = [x, y];
+        this.editor.addNode(node, false);
+        // this.editor.view.resize();
     }
 
     removeNode(node: Node): void {
