@@ -1,0 +1,9 @@
+<div layout-root>
+    <mat-accordion>
+        <mat-list dense>
+            <div *ngFor="let item of components">
+                <mat-list-item mat-line role="option" draggable [dragData]="item">{{ item.name }}</mat-list-item>
+            </div>
+        </mat-list>
+    </mat-accordion>
+</div>

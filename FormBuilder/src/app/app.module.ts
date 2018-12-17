@@ -28,7 +28,6 @@ import { FlowEditorModule } from './features/flow-editor';
         FormRendererModule,
 
         MatCommonModule, MatIconModule, MatButtonModule, MatListModule,
-
         CovalentCommonModule, CovalentLayoutModule, CovalentDialogsModule,
     ],
 

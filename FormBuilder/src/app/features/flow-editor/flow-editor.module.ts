@@ -5,6 +5,7 @@ import { FlowEditorRoutingModule } from './flow-editor-routing.module';
 import { ReteComponent } from './rete/rete.component';
 import { FlowEditorComponent } from './flow-editor.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgDragDropModule } from 'ng-drag-drop';
 
 import {
     MatCommonModule,
@@ -12,18 +13,22 @@ import {
     MatIconModule,
     MatCardModule,
     MatListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatToolbarModule
 } from '@angular/material';
+import { ToolboxComponent } from './toolbox/toolbox.component';
 
 @NgModule({
     declarations: [
         FlowEditorComponent,
-        ReteComponent
+        ReteComponent,
+        ToolboxComponent
     ],
     imports: [
         CommonModule,
         HttpClientModule,
         FlowEditorRoutingModule,
+        NgDragDropModule.forRoot(),
 
         FlexLayoutModule,
         MatCommonModule,
@@ -31,7 +36,8 @@ import {
         MatIconModule,
         MatCardModule,
         MatListModule,
-        MatExpansionModule
+        MatExpansionModule,
+        MatToolbarModule
     ],
     providers: [],
 })

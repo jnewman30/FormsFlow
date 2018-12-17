@@ -34,6 +34,7 @@
     "hammerjs": "^2.0.8",
     "jquery": "^3.3.1",
     "material": "^0.3.0",
+    "ng-drag-drop": "^5.0.0",
     "prism-themes": "^1.0.1",
     "prismjs": "^1.15.0",
     "rete": "^1.0.0-beta.5",

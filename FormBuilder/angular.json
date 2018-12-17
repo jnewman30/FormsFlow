@@ -29,6 +29,7 @@
                         "styles": [
                             "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
                             "./node_modules/prism-themes/themes/prism-vs.css",
+                            "./node_modules/ng-drag-drop/style.css",
                             "src/styles.scss"
                         ],
                         "scripts": [
