@@ -4,7 +4,7 @@ import {
     ElementRef, ViewEncapsulation
 } from '@angular/core';
 
-import { NodeEditor, Node, Engine } from 'rete'; // , Engine, Input as reteInput } from 'rete';
+import { NodeEditor, Node, Engine, Selected } from 'rete'; // , Engine, Input as reteInput } from 'rete';
 import * as ConnectionPlugin from 'rete-connection-plugin';
 import * as VueRenderPlugin from 'rete-vue-render-plugin';
 import { NumComponent } from './components/number-component';
@@ -35,8 +35,6 @@ export class ReteComponent implements AfterViewInit {
     }
 
     async ngAfterViewInit() {
-        const self = this;
-
         const container = this.el.nativeElement;
 
         this.components = [
@@ -48,36 +46,27 @@ export class ReteComponent implements AfterViewInit {
         ];
 
         this.editor = new NodeEditor('demo@0.2.0', container);
+
+        this.editor.on('error', async (e) => {
+            console.error('Editor Error', e);
+        });
+
         this.editor.use(ConnectionPlugin);
         this.editor.use(VueRenderPlugin);
+
+        this.editor.on('process nodecreated noderemoved connectioncreated connectionremoved', async () => {
+            this.flow = this.editor.toJSON();
+        });
+
+        this.editor.on('click', async (e) => {
+            this.editor.selected.clear(); // Doesn't seem to work...
+        });
 
         this.engine = new Engine('demo@0.2.0');
 
         this.components.map(c => {
             this.editor.register(c);
             this.engine.register(c);
-        });
-
-        // const jsonNode = await this.components[2].createNode({ json: '{ "name": "Fred Flinstone", "age": 40 }' });
-        // jsonNode.position = [80, 200];
-        // this.editor.addNode(jsonNode);
-
-        // const templateNode = await this.components[4].createNode({ mustache: '{{ age }}' });
-        // templateNode.position = [400, 200];
-        // this.editor.addNode(templateNode);
-
-        // const debugNode = await this.components[3].createNode();
-        // debugNode.position = [800, 200];
-        // this.editor.addNode(debugNode);
-
-        // this.editor.connect(jsonNode.outputs.get('json'), templateNode.inputs.get('json'));
-        // this.editor.connect(templateNode.outputs.get('jsonOut'), debugNode.inputs.get('json'));
-
-
-        this.editor.on('process nodecreated noderemoved connectioncreated connectionremoved', async () => {
-            // await engine.abort();
-            // await engine.process(this.editor.toJSON());
-            this.flow = this.editor.toJSON();
         });
 
         this.editor.view.resize();

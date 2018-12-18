@@ -10,8 +10,8 @@ export class TemplateComponent extends Component {
     }
 
     builder(node) {
-        const inp1 = new Input('json', 'JSON', jsonSocket);
-        const out1 = new Output('jsonOut', 'JSON', jsonSocket);
+        const inp1 = new Input('input1', 'JSON', jsonSocket);
+        const out1 = new Output('output1', 'JSON', jsonSocket);
 
         return node
             .addInput(inp1)
@@ -21,19 +21,18 @@ export class TemplateComponent extends Component {
 
     worker(node, inputs, outputs) {
         try {
-            console.log('Template : JSON Input', inputs['json'][0]);
-            const json = inputs['json'][0];
+            const input1 = inputs['input1'][0] || '{}';
             const template = node.data.mustache;
-            const jsonObj = JSON.parse(json);
+            const jsonObj = JSON.parse(input1);
             let out = null;
             try {
                 out = Mustache.render(template, jsonObj);
             } catch (e) {
                 console.warn('Invalid Mustache Template', e);
             }
-            outputs['jsonOut'] = out;
+            outputs['output1'] = out;
         } catch (e) {
-            console.error('Debug Error', e);
+            console.error('Error Displaying Debug Info', e);
         }
     }
 }

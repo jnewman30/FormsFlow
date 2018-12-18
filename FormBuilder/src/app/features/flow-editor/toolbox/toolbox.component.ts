@@ -18,7 +18,7 @@ export class ToolboxComponent implements OnInit {
         },
         {
             name: 'Debug',
-            component: 'DEBUG'
+            component: 'Debug'
         }
     ];
 

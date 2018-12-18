@@ -1,9 +1,17 @@
 <div layout-root fxLayout="column">
     <div layout-root fxLayout="row" fxLayoutAlign="space-between">
         <div tool-pallete fxLayout="column" fxFlex="200px" [class.mat-elevation-z2]="true">
-            <button mat-stroked-button (click)="run()">
-                <mat-icon>play_arrow</mat-icon>
-            </button>
+            <div fxLayout="row">
+                <button mat-stroked-button (click)="run()">
+                    <mat-icon>play_arrow</mat-icon>
+                </button>
+                <button mat-stroked-button (click)="stop()">
+                    <mat-icon>stop</mat-icon>
+                </button>
+                <button mat-stroked-button (click)="trash()">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
             <app-toolbox></app-toolbox>
         </div>
         <div fxFlex droppable (onDrop)="onDropComponent($event)">

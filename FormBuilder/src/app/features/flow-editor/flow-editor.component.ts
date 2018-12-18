@@ -16,9 +16,8 @@ export class FlowEditorComponent implements OnInit {
     }
 
     onDropComponent(event: { dragData: any, nativeEvent: DragEvent }): void {
-        console.log('Editor OnDrop', event);
-
         if (!event.dragData) {
+            console.warn('Component missing drag data!');
             return;
         }
         const x = event.nativeEvent.layerX || 100;
@@ -33,5 +32,12 @@ export class FlowEditorComponent implements OnInit {
             return;
         }
         await this.editor.run();
+    }
+
+    async stop(): Promise<void> {
+        await this.editor.engine.abort();
+    }
+
+    async trash(): Promise<void> {
     }
 }
