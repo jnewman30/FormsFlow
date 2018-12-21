@@ -1,7 +1,12 @@
-.wrapper {
+[wrapper] {
+    box-sizing: border-box;
     width: 100%;
     height: 100%;
-    box-sizing: border-box;
+    overflow: hidden;
+}
+
+[node-editor] {
+    width: auto !important;
 }
 
 // .socket.any {

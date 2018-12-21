@@ -1,5 +1,5 @@
 import { Component, Output, Input } from 'rete';
-import { jsonSocket } from '../sockets';
+import { jsonSocket, anySocket } from '../sockets';
 import { TemplateControl } from '../controls/template-control';
 import Mustache from 'mustache';
 
@@ -11,7 +11,7 @@ export class TemplateComponent extends Component {
 
     builder(node) {
         const inp1 = new Input('input1', 'JSON', jsonSocket);
-        const out1 = new Output('output1', 'JSON', jsonSocket);
+        const out1 = new Output('output1', 'Any', anySocket);
 
         return node
             .addInput(inp1)

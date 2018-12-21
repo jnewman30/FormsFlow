@@ -1,5 +1,33 @@
 <div layout-root fxLayout="column">
-    <div layout-root fxLayout="row" fxLayoutAlign="space-between">
+    <mat-drawer-container class="editor-drawer-container">
+        <mat-drawer mode="side" opened [ngStyle]="{width:'250px'}">
+            <div fxLayout="column">
+                <div fxLayout="row">
+                    <button mat-icon-button color="primary" (click)="run()">
+                        <mat-icon>play_arrow</mat-icon>
+                    </button>
+                    <button mat-icon-button (click)="stop()">
+                        <mat-icon>stop</mat-icon>
+                    </button>
+                    <button mat-icon-button (click)="trash()">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </div>
+                <div fxLayout="column">
+                    <app-toolbox fxFlex></app-toolbox>
+                </div>
+            </div>
+        </mat-drawer>
+        <mat-drawer-content>
+            <div fxFlex droppable (onDrop)="onDropComponent($event)">
+                <app-rete #editor></app-rete>
+            </div>
+        </mat-drawer-content>
+    </mat-drawer-container>
+</div>
+<!--
+<div layout-root fxLayout="column">
+    <div fxLayout="row" fxLayoutAlign="space-between" fxFlex>
         <div tool-pallete fxLayout="column" fxFlex="200px" [class.mat-elevation-z2]="true">
             <div fxLayout="row">
                 <button mat-stroked-button (click)="run()">
@@ -12,10 +40,13 @@
                     <mat-icon>delete</mat-icon>
                 </button>
             </div>
-            <app-toolbox></app-toolbox>
+            <app-toolbox fxFlex></app-toolbox>
         </div>
         <div fxFlex droppable (onDrop)="onDropComponent($event)">
-            <app-rete layout-root #editor></app-rete>
+            <app-rete fxFlex #editor></app-rete>
         </div>
     </div>
+    <div debug-pane fxFlex="8rem">
+    </div>
 </div>
+-->

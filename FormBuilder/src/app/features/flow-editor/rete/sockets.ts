@@ -8,3 +8,5 @@ numSocket.combineWith(anySocket);
 export const jsonSocket = new Socket('JSON');
 jsonSocket.combineWith(anySocket);
 
+export const xmlSocket = new Socket('XML');
+xmlSocket.combineWith(anySocket);

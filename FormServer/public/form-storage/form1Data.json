@@ -2,21 +2,16 @@
   "purchaseOrders": [
     {
       "item": "Item 1",
-      "reason": "Test 1",
-      "cost": 100
+      "reason": "No Reason",
+      "cost": 10
     },
     {
-      "item": "Item 2",
-      "reason": "Test 2",
-      "cost": 200
-    },
-    {
-      "item": "Item 3",
-      "reason": "Test 3",
-      "cost": 300
+      "item": "Steak",
+      "reason": "Hungry",
+      "cost": 30
     }
   ],
   "formId": "TestForm1",
-  "total": 600,
+  "total": 40,
   "submit": true
 }

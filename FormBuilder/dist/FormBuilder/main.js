@@ -1850,7 +1850,7 @@ var AppRoutingModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<td-layout mode=\"side\" opened=\"true\">\n    <td-navigation-drawer flex sidenavTitle=\"Form Builder\">\n        <mat-nav-list>\n            <mat-list-item [routerLink]=\"['/']\">Home</mat-list-item>\n            <mat-list-item [routerLink]=\"['builder']\">Form Builder</mat-list-item>\n            <mat-list-item [routerLink]=\"['renderer']\">Form Renderer</mat-list-item>\n        </mat-nav-list>\n    </td-navigation-drawer>\n    <td-layout-nav logo=\"assets:teradata\" toolbarTitle=\"Form Builder\" navigationRoute=\"/\">\n        <button mat-icon-button td-menu-button tdLayoutToggle>\n            <mat-icon>menu</mat-icon>\n        </button>\n        <div main-content>\n            <router-outlet></router-outlet>\n        </div>\n    </td-layout-nav>\n</td-layout>\n\n\n"
+module.exports = "<td-layout layout-root mode=\"side\" opened=\"true\" fxLayoutAlign=\"column\">\n    <td-navigation-drawer sidenavTitle=\"Form Builder\">\n        <mat-nav-list>\n            <mat-list-item [routerLink]=\"['/']\">Home</mat-list-item>\n            <mat-list-item [routerLink]=\"['builder']\">Form Builder</mat-list-item>\n            <mat-list-item [routerLink]=\"['flow']\">Flow Editor</mat-list-item>\n            <mat-list-item [routerLink]=\"['renderer']\">Form Renderer</mat-list-item>\n        </mat-nav-list>\n    </td-navigation-drawer>\n    <td-layout-nav logo=\"assets:teradata\" toolbarTitle=\"Form Builder\" navigationRoute=\"/\">\n        <button mat-icon-button td-menu-button tdLayoutToggle>\n            <mat-icon>menu</mat-icon>\n        </button>\n        <div main-content>\n            <router-outlet></router-outlet>\n        </div>\n    </td-layout-nav>\n</td-layout>\n\n\n"
 
 /***/ }),
 
@@ -1861,7 +1861,7 @@ module.exports = "<td-layout mode=\"side\" opened=\"true\">\n    <td-navigation-
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "[main-content] {\n  padding: 0.5rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9DOlxcUHJvamVjdHNcXFJob29zdGVyXFxGb3JtQnVpbGRlclxcRm9ybUJ1aWxkZXIvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQ0VJLGdCQUFlLEVBQ2xCIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiW21haW4tY29udGVudF0ge1xuICBwYWRkaW5nOiAwLjVyZW07IH1cbiIsIlxyXG5bbWFpbi1jb250ZW50XSB7XHJcbiAgICBwYWRkaW5nOiAwLjVyZW07XHJcbn1cclxuIl19 */"
+module.exports = "[layout-root] {\n  box-sizing: border;\n  width: 100%;\n  height: 100%; }\n  [layout-root] [main-content] {\n    box-sizing: border;\n    width: 100%;\n    height: 100%;\n    padding: 0.5rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9DOlxcUHJvamVjdHNcXFJob29zdGVyXFxGb3JtQnVpbGRlclxcRm9ybUJ1aWxkZXIvc3JjXFxhcHBcXGFwcC5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQ0NJLG1CQUFrQjtFQUNsQixZQUFXO0VBQ1gsYUFBWSxFQVFmO0VEUEM7SUNFTSxtQkFBa0I7SUFDbEIsWUFBVztJQUNYLGFBQVk7SUFDWixnQkFBZSxFQUNsQiIsImZpbGUiOiJzcmMvYXBwL2FwcC5jb21wb25lbnQuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIltsYXlvdXQtcm9vdF0ge1xuICBib3gtc2l6aW5nOiBib3JkZXI7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7IH1cbiAgW2xheW91dC1yb290XSBbbWFpbi1jb250ZW50XSB7XG4gICAgYm94LXNpemluZzogYm9yZGVyO1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBwYWRkaW5nOiAwLjVyZW07IH1cbiIsIltsYXlvdXQtcm9vdF0ge1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcblxyXG4gICAgW21haW4tY29udGVudF0ge1xyXG4gICAgICAgIGJveC1zaXppbmc6IGJvcmRlcjtcclxuICAgICAgICB3aWR0aDogMTAwJTtcclxuICAgICAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICAgICAgcGFkZGluZzogMC41cmVtO1xyXG4gICAgfVxyXG59XHJcbiJdfQ== */"
 
 /***/ }),
 
@@ -1921,12 +1921,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _features_home__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./features/home */ "./src/app/features/home/index.ts");
 /* harmony import */ var _features_form_builder__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./features/form-builder */ "./src/app/features/form-builder/index.ts");
 /* harmony import */ var _features_form_renderer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./features/form-renderer */ "./src/app/features/form-renderer/index.ts");
+/* harmony import */ var _features_flow_editor__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./features/flow-editor */ "./src/app/features/flow-editor/index.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -1952,6 +1954,7 @@ var AppModule = /** @class */ (function () {
                 /* Features */
                 _features_home__WEBPACK_IMPORTED_MODULE_7__["HomeModule"],
                 _features_form_builder__WEBPACK_IMPORTED_MODULE_8__["FormBuilderModule"],
+                _features_flow_editor__WEBPACK_IMPORTED_MODULE_10__["FlowEditorModule"],
                 _features_form_renderer__WEBPACK_IMPORTED_MODULE_9__["FormRendererModule"],
                 _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatCommonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatIconModule"], _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatButtonModule"], _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatListModule"],
                 _covalent_core__WEBPACK_IMPORTED_MODULE_4__["CovalentCommonModule"], _covalent_core__WEBPACK_IMPORTED_MODULE_4__["CovalentLayoutModule"], _covalent_core__WEBPACK_IMPORTED_MODULE_4__["CovalentDialogsModule"],
@@ -1960,6 +1963,1291 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/flow-editor-routing.module.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/features/flow-editor/flow-editor-routing.module.ts ***!
+  \********************************************************************/
+/*! exports provided: FlowEditorRoutingModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlowEditorRoutingModule", function() { return FlowEditorRoutingModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _flow_editor_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./flow-editor.component */ "./src/app/features/flow-editor/flow-editor.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+var routes = [
+    {
+        path: 'flow',
+        component: _flow_editor_component__WEBPACK_IMPORTED_MODULE_2__["FlowEditorComponent"]
+    }
+];
+var FlowEditorRoutingModule = /** @class */ (function () {
+    function FlowEditorRoutingModule() {
+    }
+    FlowEditorRoutingModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)],
+            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]]
+        })
+    ], FlowEditorRoutingModule);
+    return FlowEditorRoutingModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/flow-editor.component.html":
+/*!*****************************************************************!*\
+  !*** ./src/app/features/flow-editor/flow-editor.component.html ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<!-- <div layout-root fxLayout=\"column\">\r\n    <div fxLayout=\"row\" fxLayoutAlign=\"space-between\" fxFlex>\r\n        <div tool-pallete fxLayout=\"column\" fxFlex=\"200px\" [class.mat-elevation-z2]=\"true\">\r\n            <div fxLayout=\"row\">\r\n                <button mat-stroked-button (click)=\"run()\">\r\n                    <mat-icon>play_arrow</mat-icon>\r\n                </button>\r\n                <button mat-stroked-button (click)=\"stop()\">\r\n                    <mat-icon>stop</mat-icon>\r\n                </button>\r\n                <button mat-stroked-button (click)=\"trash()\">\r\n                    <mat-icon>delete</mat-icon>\r\n                </button>\r\n            </div>\r\n            <app-toolbox fxFlex></app-toolbox>\r\n        </div>\r\n        <div fxFlex droppable (onDrop)=\"onDropComponent($event)\">\r\n            <app-rete fxFlex #editor></app-rete>\r\n        </div>\r\n    </div>\r\n    <div debug-pane fxFlex=\"8rem\">\r\n    </div>\r\n</div> -->\r\n\r\n<td-layout-nav-list #navList [opened]=\"true\" [mode]=\"side\" [sidenavWidth]=\"275px\">\r\n    <div td-sidenav-toolbar-content layout=\"row\" layout-align=\"start center\">\r\n        <button mat-icon-button tdLayoutToggle>\r\n            <mat-icon>menu</mat-icon>\r\n        </button>\r\n        <mat-icon [routerLink]=\"['/']\" class=\"mat-icon-logo cursor-pointer\" svgIcon=\"assets:teradata\"></mat-icon>\r\n        <span [routerLink]=\"['/']\" class=\"cursor-pointer\">Covalent</span>\r\n    </div>\r\n    <div td-toolbar-content layout=\"row\" layout-align=\"start center\" flex>\r\n        <button mat-icon-button tdLayoutNavListOpen [hideWhenOpened]=\"true\">\r\n            <mat-icon>arrow_back</mat-icon>\r\n        </button>\r\n        <span>Page Title</span>\r\n        <span flex></span>\r\n        <a mat-icon-button matTooltip=\"Docs\" href=\"https://teradata.github.io/covalent/\" target=\"_blank\">\r\n            <mat-icon>chrome_reader_mode</mat-icon>\r\n        </a>\r\n        <a mat-icon-button matTooltip=\"Github\" href=\"https://github.com/teradata/covalent\" target=\"_blank\">\r\n            <mat-icon svgIcon=\"assets:github\"></mat-icon>\r\n        </a>\r\n    </div>\r\n    <mat-nav-list td-sidenav-content [tdLayoutNavListClose]=\"!media.query('gt-sm')\">\r\n        <ng-template let-item let-last=\"last\" ngFor [ngForOf]=\"navmenu\">\r\n            <a mat-list-item>\r\n                <mat-icon matListAvatar>{{item.icon}}</mat-icon>\r\n                <h3 matLine> {{item.title}} </h3>\r\n                <p matLine> {{item.description}} </p>\r\n            </a>\r\n            <mat-divider [inset]=\"true\" *ngIf=\"!last\"></mat-divider>\r\n        </ng-template>\r\n    </mat-nav-list>\r\n    <div tdMediaToggle=\"gt-xs\" [mediaClasses]=\"['push-sm']\">\r\n        <mat-card>\r\n            <mat-card-title>Main Content</mat-card-title>\r\n            <mat-card-subtitle>content area</mat-card-subtitle>\r\n            <mat-divider></mat-divider>\r\n            <mat-card-content>\r\n                card content\r\n            </mat-card-content>\r\n            <mat-divider></mat-divider>\r\n            <mat-card-actions>\r\n                <a mat-button color=\"accent\" class=\"text-upper\" [routerLink]=\"['/']\">\r\n                    <span>View More</span>\r\n                </a>\r\n            </mat-card-actions>\r\n        </mat-card>\r\n    </div>\r\n    <td-layout-footer-inner>\r\n        Optional inner footer\r\n    </td-layout-footer-inner>\r\n    <td-layout-footer>\r\n        <div layout=\"row\" layout-align=\"start center\">\r\n            <span class=\"mat-caption\">Copyright &copy; 2017 Teradata. All rights reserved</span>\r\n        </div>\r\n    </td-layout-footer>\r\n</td-layout-nav-list>\r\n"
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/flow-editor.component.scss":
+/*!*****************************************************************!*\
+  !*** ./src/app/features/flow-editor/flow-editor.component.scss ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "[layout-root] {\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  overflow: auto; }\n  [layout-root] [tool-pallete] {\n    width: 100%;\n    height: 100%;\n    box-sizing: border-box;\n    padding: 0.25rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZmVhdHVyZXMvZmxvdy1lZGl0b3IvZmxvdy1lZGl0b3IuY29tcG9uZW50LnNjc3MiLCJzcmMvYXBwL2ZlYXR1cmVzL2Zsb3ctZWRpdG9yL0M6XFxQcm9qZWN0c1xcUmhvb3N0ZXJcXEZvcm1CdWlsZGVyXFxGb3JtQnVpbGRlci9zcmNcXGFwcFxcZmVhdHVyZXNcXGZsb3ctZWRpdG9yXFxmbG93LWVkaXRvci5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQ0NJLFlBQVc7RUFDWCxhQUFZO0VBQ1osdUJBQXNCO0VBQ3RCLGVBQWMsRUFRakI7RURQQztJQ0VNLFlBQVc7SUFDWCxhQUFZO0lBQ1osdUJBQXNCO0lBQ3RCLGlCQUFnQixFQUNuQiIsImZpbGUiOiJzcmMvYXBwL2ZlYXR1cmVzL2Zsb3ctZWRpdG9yL2Zsb3ctZWRpdG9yLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiW2xheW91dC1yb290XSB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IDEwMCU7XG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gIG92ZXJmbG93OiBhdXRvOyB9XG4gIFtsYXlvdXQtcm9vdF0gW3Rvb2wtcGFsbGV0ZV0ge1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIGhlaWdodDogMTAwJTtcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xuICAgIHBhZGRpbmc6IDAuMjVyZW07IH1cbiIsIltsYXlvdXQtcm9vdF0ge1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbiAgICBoZWlnaHQ6IDEwMCU7XHJcbiAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gICAgb3ZlcmZsb3c6IGF1dG87XHJcblxyXG4gICAgW3Rvb2wtcGFsbGV0ZV0ge1xyXG4gICAgICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgICAgIGhlaWdodDogMTAwJTtcclxuICAgICAgICBib3gtc2l6aW5nOiBib3JkZXItYm94O1xyXG4gICAgICAgIHBhZGRpbmc6IDAuMjVyZW07XHJcbiAgICB9XHJcbn1cclxuIl19 */"
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/flow-editor.component.ts":
+/*!***************************************************************!*\
+  !*** ./src/app/features/flow-editor/flow-editor.component.ts ***!
+  \***************************************************************/
+/*! exports provided: FlowEditorComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlowEditorComponent", function() { return FlowEditorComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _rete_rete_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./rete/rete.component */ "./src/app/features/flow-editor/rete/rete.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+var FlowEditorComponent = /** @class */ (function () {
+    function FlowEditorComponent() {
+    }
+    FlowEditorComponent.prototype.ngOnInit = function () {
+    };
+    FlowEditorComponent.prototype.onDropComponent = function (event) {
+        if (!event.dragData) {
+            console.warn('Component missing drag data!');
+            return;
+        }
+        var x = event.nativeEvent.layerX || 100;
+        var y = event.nativeEvent.layerY || 200;
+        var component = event.dragData.component;
+        this.editor.addNode(component, x, y);
+    };
+    FlowEditorComponent.prototype.run = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        if (!this.editor) {
+                            return [2 /*return*/];
+                        }
+                        return [4 /*yield*/, this.editor.run()];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    FlowEditorComponent.prototype.stop = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.editor.engine.abort()];
+                    case 1:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    FlowEditorComponent.prototype.trash = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                return [2 /*return*/];
+            });
+        });
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('editor'),
+        __metadata("design:type", _rete_rete_component__WEBPACK_IMPORTED_MODULE_1__["ReteComponent"])
+    ], FlowEditorComponent.prototype, "editor", void 0);
+    FlowEditorComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-flow-editor',
+            template: __webpack_require__(/*! ./flow-editor.component.html */ "./src/app/features/flow-editor/flow-editor.component.html"),
+            styles: [__webpack_require__(/*! ./flow-editor.component.scss */ "./src/app/features/flow-editor/flow-editor.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FlowEditorComponent);
+    return FlowEditorComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/flow-editor.module.ts":
+/*!************************************************************!*\
+  !*** ./src/app/features/flow-editor/flow-editor.module.ts ***!
+  \************************************************************/
+/*! exports provided: FlowEditorModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FlowEditorModule", function() { return FlowEditorModule; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/fesm5/common.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _flow_editor_routing_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./flow-editor-routing.module */ "./src/app/features/flow-editor/flow-editor-routing.module.ts");
+/* harmony import */ var _rete_rete_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./rete/rete.component */ "./src/app/features/flow-editor/rete/rete.component.ts");
+/* harmony import */ var _flow_editor_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./flow-editor.component */ "./src/app/features/flow-editor/flow-editor.component.ts");
+/* harmony import */ var _angular_flex_layout__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/flex-layout */ "./node_modules/@angular/flex-layout/esm5/flex-layout.es5.js");
+/* harmony import */ var ng_drag_drop__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ng-drag-drop */ "./node_modules/ng-drag-drop/index.js");
+/* harmony import */ var ng_drag_drop__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(ng_drag_drop__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _covalent_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @covalent/core */ "./node_modules/@covalent/core/esm5/covalent-core.js");
+/* harmony import */ var _toolbox_toolbox_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./toolbox/toolbox.component */ "./src/app/features/flow-editor/toolbox/toolbox.component.ts");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+var FlowEditorModule = /** @class */ (function () {
+    function FlowEditorModule() {
+    }
+    FlowEditorModule = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
+            declarations: [
+                _flow_editor_component__WEBPACK_IMPORTED_MODULE_5__["FlowEditorComponent"],
+                _rete_rete_component__WEBPACK_IMPORTED_MODULE_4__["ReteComponent"],
+                _toolbox_toolbox_component__WEBPACK_IMPORTED_MODULE_10__["ToolboxComponent"]
+            ],
+            imports: [
+                _angular_common__WEBPACK_IMPORTED_MODULE_1__["CommonModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"],
+                _flow_editor_routing_module__WEBPACK_IMPORTED_MODULE_3__["FlowEditorRoutingModule"],
+                ng_drag_drop__WEBPACK_IMPORTED_MODULE_7__["NgDragDropModule"].forRoot(),
+                _angular_flex_layout__WEBPACK_IMPORTED_MODULE_6__["FlexLayoutModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCommonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatIconModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatCardModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatListModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatExpansionModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_8__["MatToolbarModule"],
+                _covalent_core__WEBPACK_IMPORTED_MODULE_9__["CovalentCommonModule"],
+                _covalent_core__WEBPACK_IMPORTED_MODULE_9__["CovalentLayoutModule"]
+            ],
+            providers: [],
+        })
+    ], FlowEditorModule);
+    return FlowEditorModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/index.ts":
+/*!***********************************************!*\
+  !*** ./src/app/features/flow-editor/index.ts ***!
+  \***********************************************/
+/*! exports provided: FlowEditorModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _flow_editor_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./flow-editor.module */ "./src/app/features/flow-editor/flow-editor.module.ts");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "FlowEditorModule", function() { return _flow_editor_module__WEBPACK_IMPORTED_MODULE_0__["FlowEditorModule"]; });
+
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/components/add-component.ts":
+/*!***********************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/components/add-component.ts ***!
+  \***********************************************************************/
+/*! exports provided: AddComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddComponent", function() { return AddComponent; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sockets__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sockets */ "./src/app/features/flow-editor/rete/sockets.ts");
+/* harmony import */ var _controls_number_control__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controls/number-control */ "./src/app/features/flow-editor/rete/controls/number-control.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+var AddComponent = /** @class */ (function (_super) {
+    __extends(AddComponent, _super);
+    function AddComponent() {
+        return _super.call(this, 'Add') || this;
+    }
+    AddComponent.prototype.builder = function (node) {
+        var inp1 = new rete__WEBPACK_IMPORTED_MODULE_0__["Input"]('num1', 'Number', _sockets__WEBPACK_IMPORTED_MODULE_1__["numSocket"]);
+        var inp2 = new rete__WEBPACK_IMPORTED_MODULE_0__["Input"]('num2', 'Number', _sockets__WEBPACK_IMPORTED_MODULE_1__["numSocket"]);
+        var out = new rete__WEBPACK_IMPORTED_MODULE_0__["Output"]('num', 'Number', _sockets__WEBPACK_IMPORTED_MODULE_1__["numSocket"]);
+        inp1.addControl(new _controls_number_control__WEBPACK_IMPORTED_MODULE_2__["NumControl"](this.editor, 'num1'));
+        inp2.addControl(new _controls_number_control__WEBPACK_IMPORTED_MODULE_2__["NumControl"](this.editor, 'num2'));
+        node.addInput(inp1)
+            .addInput(inp2)
+            .addControl(new _controls_number_control__WEBPACK_IMPORTED_MODULE_2__["NumControl"](this.editor, 'preview', true))
+            .addOutput(out);
+    };
+    AddComponent.prototype.worker = function (node, inputs, outputs) {
+        var n1 = inputs['num1'].length ? inputs['num1'][0] : node.data.num1;
+        var n2 = inputs['num2'].length ? inputs['num2'][0] : node.data.num2;
+        var sum = n1 + n2;
+        var ctrl = this.editor.nodes.find(function (n) { return n.id === node.id; }).controls.get('preview');
+        ctrl.setValue(sum);
+        outputs['num'] = sum;
+    };
+    AddComponent.prototype.created = function (node) {
+        console.log('created', node);
+    };
+    AddComponent.prototype.destroyed = function (node) {
+        console.log('destroyed', node);
+    };
+    return AddComponent;
+}(rete__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/components/debug-component.ts":
+/*!*************************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/components/debug-component.ts ***!
+  \*************************************************************************/
+/*! exports provided: DebugComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DebugComponent", function() { return DebugComponent; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sockets__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sockets */ "./src/app/features/flow-editor/rete/sockets.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var DebugComponent = /** @class */ (function (_super) {
+    __extends(DebugComponent, _super);
+    function DebugComponent() {
+        return _super.call(this, 'Debug') || this;
+    }
+    DebugComponent.prototype.builder = function (node) {
+        var input1 = new rete__WEBPACK_IMPORTED_MODULE_0__["Input"]('input1', 'Any', _sockets__WEBPACK_IMPORTED_MODULE_1__["anySocket"]);
+        return node.addInput(input1);
+    };
+    DebugComponent.prototype.worker = function (node, inputs, outputs) {
+        var input1 = inputs['input1'][0];
+        if (input1) {
+            console.log('Debug:', input1);
+        }
+    };
+    return DebugComponent;
+}(rete__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/components/http-get-component.ts":
+/*!****************************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/components/http-get-component.ts ***!
+  \****************************************************************************/
+/*! exports provided: HttpGetComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpGetComponent", function() { return HttpGetComponent; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sockets__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sockets */ "./src/app/features/flow-editor/rete/sockets.ts");
+/* harmony import */ var _controls_url_control__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controls/url-control */ "./src/app/features/flow-editor/rete/controls/url-control.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+var HttpGetComponent = /** @class */ (function (_super) {
+    __extends(HttpGetComponent, _super);
+    function HttpGetComponent(http) {
+        var _this = _super.call(this, 'HttpGet') || this;
+        _this.http = http;
+        return _this;
+    }
+    HttpGetComponent.prototype.builder = function (node) {
+        var output1 = new rete__WEBPACK_IMPORTED_MODULE_0__["Output"]('output1', 'JSON', _sockets__WEBPACK_IMPORTED_MODULE_1__["jsonSocket"]);
+        return node
+            .addControl(new _controls_url_control__WEBPACK_IMPORTED_MODULE_2__["UrlControl"](this.editor, 'url'))
+            .addOutput(output1);
+    };
+    HttpGetComponent.prototype.worker = function (node, inputs, outputs) {
+        return __awaiter(this, void 0, void 0, function () {
+            var url, data;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        url = node.data.url;
+                        return [4 /*yield*/, this.http
+                                .get(url).toPromise()
+                                .then(function (d) { return JSON.stringify(d); })];
+                    case 1:
+                        data = _a.sent();
+                        outputs['output1'] = data;
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    return HttpGetComponent;
+}(rete__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/components/json-component.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/components/json-component.ts ***!
+  \************************************************************************/
+/*! exports provided: JsonComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JsonComponent", function() { return JsonComponent; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sockets__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sockets */ "./src/app/features/flow-editor/rete/sockets.ts");
+/* harmony import */ var _controls_json_control__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controls/json-control */ "./src/app/features/flow-editor/rete/controls/json-control.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+var JsonComponent = /** @class */ (function (_super) {
+    __extends(JsonComponent, _super);
+    function JsonComponent() {
+        return _super.call(this, 'JSON') || this;
+    }
+    JsonComponent.prototype.builder = function (node) {
+        var out1 = new rete__WEBPACK_IMPORTED_MODULE_0__["Output"]('json', 'JSON', _sockets__WEBPACK_IMPORTED_MODULE_1__["jsonSocket"]);
+        return node
+            .addControl(new _controls_json_control__WEBPACK_IMPORTED_MODULE_2__["JsonControl"](this.editor, 'json'))
+            .addOutput(out1);
+    };
+    JsonComponent.prototype.worker = function (node, inputs, outputs) {
+        outputs['json'] = node.data.json;
+    };
+    return JsonComponent;
+}(rete__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/components/number-component.ts":
+/*!**************************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/components/number-component.ts ***!
+  \**************************************************************************/
+/*! exports provided: NumComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NumComponent", function() { return NumComponent; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sockets__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sockets */ "./src/app/features/flow-editor/rete/sockets.ts");
+/* harmony import */ var _controls_number_control__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controls/number-control */ "./src/app/features/flow-editor/rete/controls/number-control.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+var NumComponent = /** @class */ (function (_super) {
+    __extends(NumComponent, _super);
+    function NumComponent() {
+        return _super.call(this, 'Number') || this;
+    }
+    NumComponent.prototype.builder = function (node) {
+        var out1 = new rete__WEBPACK_IMPORTED_MODULE_0__["Output"]('num', 'Number', _sockets__WEBPACK_IMPORTED_MODULE_1__["numSocket"]);
+        return node.addControl(new _controls_number_control__WEBPACK_IMPORTED_MODULE_2__["NumControl"](this.editor, 'num')).addOutput(out1);
+    };
+    NumComponent.prototype.worker = function (node, inputs, outputs) {
+        outputs['num'] = node.data.num;
+    };
+    return NumComponent;
+}(rete__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/components/template-component.ts":
+/*!****************************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/components/template-component.ts ***!
+  \****************************************************************************/
+/*! exports provided: TemplateComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TemplateComponent", function() { return TemplateComponent; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _sockets__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../sockets */ "./src/app/features/flow-editor/rete/sockets.ts");
+/* harmony import */ var _controls_template_control__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../controls/template-control */ "./src/app/features/flow-editor/rete/controls/template-control.ts");
+/* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! mustache */ "../node_modules/mustache/mustache.js");
+/* harmony import */ var mustache__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(mustache__WEBPACK_IMPORTED_MODULE_3__);
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+
+
+var TemplateComponent = /** @class */ (function (_super) {
+    __extends(TemplateComponent, _super);
+    function TemplateComponent() {
+        return _super.call(this, 'Template') || this;
+    }
+    TemplateComponent.prototype.builder = function (node) {
+        var inp1 = new rete__WEBPACK_IMPORTED_MODULE_0__["Input"]('input1', 'JSON', _sockets__WEBPACK_IMPORTED_MODULE_1__["jsonSocket"]);
+        var out1 = new rete__WEBPACK_IMPORTED_MODULE_0__["Output"]('output1', 'Any', _sockets__WEBPACK_IMPORTED_MODULE_1__["anySocket"]);
+        return node
+            .addInput(inp1)
+            .addControl(new _controls_template_control__WEBPACK_IMPORTED_MODULE_2__["TemplateControl"](this.editor, 'mustache'))
+            .addOutput(out1);
+    };
+    TemplateComponent.prototype.worker = function (node, inputs, outputs) {
+        try {
+            var input1 = inputs['input1'][0] || '{}';
+            var template = node.data.mustache;
+            var jsonObj = JSON.parse(input1);
+            var out = null;
+            try {
+                out = mustache__WEBPACK_IMPORTED_MODULE_3___default.a.render(template, jsonObj);
+            }
+            catch (e) {
+                console.warn('Invalid Mustache Template', e);
+            }
+            outputs['output1'] = out;
+        }
+        catch (e) {
+            console.error('Error Displaying Debug Info', e);
+        }
+    };
+    return TemplateComponent;
+}(rete__WEBPACK_IMPORTED_MODULE_0__["Component"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/controls/json-control.ts":
+/*!********************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/controls/json-control.ts ***!
+  \********************************************************************/
+/*! exports provided: JsonControl */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "JsonControl", function() { return JsonControl; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue_dist_vue_esm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue/dist/vue.esm */ "./node_modules/vue/dist/vue.esm.js");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var VueJsonControl = vue_dist_vue_esm__WEBPACK_IMPORTED_MODULE_1__["default"].component('json', {
+    props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],
+    template: '<textarea :readonly="readonly" :value="value" @input="change($event)" rows="5"></textarea>',
+    data: function () {
+        return {
+            value: '',
+        };
+    },
+    methods: {
+        change: function (e) {
+            this.value = e.target.value;
+            this.update();
+        },
+        update: function () {
+            if (this.ikey) {
+                this.putData(this.ikey, this.value);
+            }
+            this.emitter.trigger('process');
+        }
+    },
+    mounted: function () {
+        this.value = this.getData(this.ikey);
+    }
+});
+var JsonControl = /** @class */ (function (_super) {
+    __extends(JsonControl, _super);
+    function JsonControl(emitter, key, readonly) {
+        if (readonly === void 0) { readonly = false; }
+        var _this = _super.call(this, key) || this;
+        _this.emitter = emitter;
+        _this.key = key;
+        _this.component = VueJsonControl;
+        _this.props = { emitter: emitter, ikey: key, readonly: readonly };
+        return _this;
+    }
+    JsonControl.prototype.setValue = function (val) {
+        this.vueContext.value = val;
+    };
+    return JsonControl;
+}(rete__WEBPACK_IMPORTED_MODULE_0__["Control"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/controls/number-control.ts":
+/*!**********************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/controls/number-control.ts ***!
+  \**********************************************************************/
+/*! exports provided: NumControl */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NumControl", function() { return NumControl; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue_dist_vue_esm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue/dist/vue.esm */ "./node_modules/vue/dist/vue.esm.js");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var VueNumControl = vue_dist_vue_esm__WEBPACK_IMPORTED_MODULE_1__["default"].component('num', {
+    props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],
+    template: '<input type="number" :readonly="readonly" :value="value" @input="change($event)"/>',
+    data: function () {
+        return {
+            value: 0,
+        };
+    },
+    methods: {
+        change: function (e) {
+            this.value = +e.target.value;
+            this.update();
+        },
+        update: function () {
+            if (this.ikey) {
+                this.putData(this.ikey, this.value);
+            }
+            this.emitter.trigger('process');
+        }
+    },
+    mounted: function () {
+        this.value = this.getData(this.ikey);
+    }
+});
+var NumControl = /** @class */ (function (_super) {
+    __extends(NumControl, _super);
+    function NumControl(emitter, key, readonly) {
+        if (readonly === void 0) { readonly = false; }
+        var _this = _super.call(this, key) || this;
+        _this.emitter = emitter;
+        _this.key = key;
+        _this.component = VueNumControl;
+        _this.props = { emitter: emitter, ikey: key, readonly: readonly };
+        return _this;
+    }
+    NumControl.prototype.setValue = function (val) {
+        this.vueContext.value = val;
+    };
+    return NumControl;
+}(rete__WEBPACK_IMPORTED_MODULE_0__["Control"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/controls/template-control.ts":
+/*!************************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/controls/template-control.ts ***!
+  \************************************************************************/
+/*! exports provided: TemplateControl */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TemplateControl", function() { return TemplateControl; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue_dist_vue_esm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue/dist/vue.esm */ "./node_modules/vue/dist/vue.esm.js");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var VueTemplateControl = vue_dist_vue_esm__WEBPACK_IMPORTED_MODULE_1__["default"].component('mustache', {
+    props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],
+    template: '<input type="text" :readonly="readonly" :value="value" @input="change($event)" />',
+    data: function () {
+        return {
+            value: '',
+        };
+    },
+    methods: {
+        change: function (e) {
+            this.value = e.target.value;
+            this.update();
+        },
+        update: function () {
+            if (this.ikey) {
+                this.putData(this.ikey, this.value);
+            }
+            this.emitter.trigger('process');
+        }
+    },
+    mounted: function () {
+        this.value = this.getData(this.ikey);
+    }
+});
+var TemplateControl = /** @class */ (function (_super) {
+    __extends(TemplateControl, _super);
+    function TemplateControl(emitter, key, readonly) {
+        if (readonly === void 0) { readonly = false; }
+        var _this = _super.call(this, key) || this;
+        _this.emitter = emitter;
+        _this.key = key;
+        _this.component = VueTemplateControl;
+        _this.props = { emitter: emitter, ikey: key, readonly: readonly };
+        return _this;
+    }
+    TemplateControl.prototype.setValue = function (val) {
+        this.vueContext.value = val;
+    };
+    return TemplateControl;
+}(rete__WEBPACK_IMPORTED_MODULE_0__["Control"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/controls/url-control.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/controls/url-control.ts ***!
+  \*******************************************************************/
+/*! exports provided: UrlControl */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UrlControl", function() { return UrlControl; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vue_dist_vue_esm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue/dist/vue.esm */ "./node_modules/vue/dist/vue.esm.js");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    }
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+
+
+var VueUrlControl = vue_dist_vue_esm__WEBPACK_IMPORTED_MODULE_1__["default"].component('num', {
+    props: ['readonly', 'emitter', 'ikey', 'getData', 'putData'],
+    template: '<input type="url" :readonly="readonly" :value="value" @input="change($event)"/>',
+    data: function () {
+        return {
+            value: '',
+        };
+    },
+    methods: {
+        change: function (e) {
+            this.value = e.target.value;
+            this.update();
+        },
+        update: function () {
+            if (this.ikey) {
+                this.putData(this.ikey, this.value);
+            }
+            this.emitter.trigger('process');
+        }
+    },
+    mounted: function () {
+        this.value = this.getData(this.ikey);
+    }
+});
+var UrlControl = /** @class */ (function (_super) {
+    __extends(UrlControl, _super);
+    function UrlControl(emitter, key, readonly) {
+        if (readonly === void 0) { readonly = false; }
+        var _this = _super.call(this, key) || this;
+        _this.emitter = emitter;
+        _this.key = key;
+        _this.component = VueUrlControl;
+        _this.props = { emitter: emitter, ikey: key, readonly: readonly };
+        return _this;
+    }
+    UrlControl.prototype.setValue = function (val) {
+        this.vueContext.value = val;
+    };
+    return UrlControl;
+}(rete__WEBPACK_IMPORTED_MODULE_0__["Control"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/rete.component.scss":
+/*!***************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/rete.component.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".wrapper {\n  width: 100%;\n  height: 100%;\n  box-sizing: border-box;\n  overflow: auto; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZmVhdHVyZXMvZmxvdy1lZGl0b3IvcmV0ZS9DOlxcUHJvamVjdHNcXFJob29zdGVyXFxGb3JtQnVpbGRlclxcRm9ybUJ1aWxkZXIvc3JjXFxhcHBcXGZlYXR1cmVzXFxmbG93LWVkaXRvclxccmV0ZVxccmV0ZS5jb21wb25lbnQuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLFlBQVc7RUFDWCxhQUFZO0VBQ1osdUJBQXNCO0VBQ3RCLGVBQWMsRUFDakIiLCJmaWxlIjoic3JjL2FwcC9mZWF0dXJlcy9mbG93LWVkaXRvci9yZXRlL3JldGUuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIud3JhcHBlciB7XHJcbiAgICB3aWR0aDogMTAwJTtcclxuICAgIGhlaWdodDogMTAwJTtcclxuICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XHJcbiAgICBvdmVyZmxvdzogYXV0bztcclxufVxyXG5cclxuLy8gLnNvY2tldC5hbnkge1xyXG4vLyAgICAgYmFja2dyb3VuZDogIzQ0NCAhaW1wb3J0YW50O1xyXG4vLyB9XHJcblxyXG4vLyAubm9kZSB7XHJcbi8vICAgICBiYWNrZ3JvdW5kOiByZ2IoMTI5LCAxNzAsIDIzMykgIWltcG9ydGFudDtcclxuLy8gfVxyXG4vLyAubm9kZS5qc29uIHtcclxuLy8gICAgIGJhY2tncm91bmQ6IHJnYig2MCwgOTksIDIxNCkgIWltcG9ydGFudDtcclxuLy8gfVxyXG5cclxuLy8gLnNvY2tldC5qc29uIHtcclxuLy8gICAgIGJhY2tncm91bmQ6IHJnYigyMjgsIDEyNSwgOSkgIWltcG9ydGFudDtcclxuLy8gfVxyXG5cclxuLy8gLm5vZGUuZGVidWcge1xyXG4vLyAgICAgYmFja2dyb3VuZDogcmdiKDEzNSwgMTc5LCAxMzUpICFpbXBvcnRhbnQ7XHJcbi8vIH1cclxuXHJcbi8vIC5ub2RlLnNlbGVjdGVkIHtcclxuLy8gICAgIGJvcmRlcjogZGFzaGVkICNmZmZmMDAgIWltcG9ydGFudDtcclxuLy8gfVxyXG4iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/rete.component.ts":
+/*!*************************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/rete.component.ts ***!
+  \*************************************************************/
+/*! exports provided: ReteComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ReteComponent", function() { return ReteComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var rete_connection_plugin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rete-connection-plugin */ "./node_modules/rete-connection-plugin/build/connection-plugin.min.js");
+/* harmony import */ var rete_connection_plugin__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(rete_connection_plugin__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var rete_vue_render_plugin__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rete-vue-render-plugin */ "./node_modules/rete-vue-render-plugin/build/vue-render-plugin.min.js");
+/* harmony import */ var rete_vue_render_plugin__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(rete_vue_render_plugin__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _components_number_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/number-component */ "./src/app/features/flow-editor/rete/components/number-component.ts");
+/* harmony import */ var _components_add_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/add-component */ "./src/app/features/flow-editor/rete/components/add-component.ts");
+/* harmony import */ var _components_json_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/json-component */ "./src/app/features/flow-editor/rete/components/json-component.ts");
+/* harmony import */ var _components_debug_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/debug-component */ "./src/app/features/flow-editor/rete/components/debug-component.ts");
+/* harmony import */ var _components_template_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/template-component */ "./src/app/features/flow-editor/rete/components/template-component.ts");
+/* harmony import */ var _components_http_get_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/http-get-component */ "./src/app/features/flow-editor/rete/components/http-get-component.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (undefined && undefined.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (undefined && undefined.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = op[0] & 2 ? y["return"] : op[0] ? y["throw"] || ((t = y["return"]) && t.call(y), 0) : y.next) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [op[0] & 2, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+ // , Engine, Input as reteInput } from 'rete';
+
+
+
+
+
+
+
+
+
+var ReteComponent = /** @class */ (function () {
+    function ReteComponent(http) {
+        this.http = http;
+        this.components = [];
+        this.flow = {};
+        console.log('Rete Component');
+    }
+    ReteComponent.prototype.ngAfterViewInit = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var container;
+            var _this = this;
+            return __generator(this, function (_a) {
+                container = this.el.nativeElement;
+                this.components = [
+                    new _components_json_component__WEBPACK_IMPORTED_MODULE_6__["JsonComponent"](),
+                    new _components_http_get_component__WEBPACK_IMPORTED_MODULE_9__["HttpGetComponent"](this.http),
+                    new _components_template_component__WEBPACK_IMPORTED_MODULE_8__["TemplateComponent"](),
+                    new _components_debug_component__WEBPACK_IMPORTED_MODULE_7__["DebugComponent"](),
+                    new _components_number_component__WEBPACK_IMPORTED_MODULE_4__["NumComponent"](),
+                    new _components_add_component__WEBPACK_IMPORTED_MODULE_5__["AddComponent"](),
+                ];
+                this.editor = new rete__WEBPACK_IMPORTED_MODULE_1__["NodeEditor"]('demo@0.2.0', container);
+                this.editor.on('error', function (e) { return __awaiter(_this, void 0, void 0, function () {
+                    return __generator(this, function (_a) {
+                        console.error('Editor Error', e);
+                        return [2 /*return*/];
+                    });
+                }); });
+                this.editor.use(rete_connection_plugin__WEBPACK_IMPORTED_MODULE_2__);
+                this.editor.use(rete_vue_render_plugin__WEBPACK_IMPORTED_MODULE_3__);
+                this.editor.on('process nodecreated noderemoved connectioncreated connectionremoved', function () { return __awaiter(_this, void 0, void 0, function () {
+                    return __generator(this, function (_a) {
+                        this.flow = this.editor.toJSON();
+                        return [2 /*return*/];
+                    });
+                }); });
+                this.editor.on('click', function (e) { return __awaiter(_this, void 0, void 0, function () {
+                    return __generator(this, function (_a) {
+                        this.editor.selected.clear(); // Doesn't seem to work...
+                        return [2 /*return*/];
+                    });
+                }); });
+                this.engine = new rete__WEBPACK_IMPORTED_MODULE_1__["Engine"]('demo@0.2.0');
+                this.components.map(function (c) {
+                    _this.editor.register(c);
+                    _this.engine.register(c);
+                });
+                this.editor.view.resize();
+                this.editor.trigger('process');
+                return [2 /*return*/];
+            });
+        });
+    };
+    ReteComponent.prototype.addNode = function (name, x, y) {
+        if (x === void 0) { x = 200; }
+        if (y === void 0) { y = 200; }
+        return __awaiter(this, void 0, void 0, function () {
+            var component, node;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        component = this.components.find(function (c) { return c.name === name; });
+                        if (!component) {
+                            return [2 /*return*/];
+                        }
+                        return [4 /*yield*/, component.createNode()];
+                    case 1:
+                        node = _a.sent();
+                        node.position = [x, y];
+                        this.editor.addNode(node, false);
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    ReteComponent.prototype.removeNode = function (node) {
+        this.editor.removeNode(node);
+    };
+    ReteComponent.prototype.run = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        this.flow = this.editor.toJSON();
+                        return [4 /*yield*/, this.engine.abort()];
+                    case 1:
+                        _a.sent();
+                        return [4 /*yield*/, this.engine.process(this.flow)];
+                    case 2:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"])('nodeEditor'),
+        __metadata("design:type", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ElementRef"])
+    ], ReteComponent.prototype, "el", void 0);
+    __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Input"])(),
+        __metadata("design:type", Object)
+    ], ReteComponent.prototype, "flow", void 0);
+    ReteComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-rete',
+            template: '<div class="wrapper"><div #nodeEditor class="node-editor"></div></div>',
+            styles: [__webpack_require__(/*! ./rete.component.scss */ "./src/app/features/flow-editor/rete/rete.component.scss")],
+            encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewEncapsulation"].None
+        }),
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_10__["HttpClient"]])
+    ], ReteComponent);
+    return ReteComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/rete/sockets.ts":
+/*!******************************************************!*\
+  !*** ./src/app/features/flow-editor/rete/sockets.ts ***!
+  \******************************************************/
+/*! exports provided: anySocket, numSocket, jsonSocket, xmlSocket */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "anySocket", function() { return anySocket; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "numSocket", function() { return numSocket; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "jsonSocket", function() { return jsonSocket; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xmlSocket", function() { return xmlSocket; });
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! rete */ "./node_modules/rete/build/rete.min.js");
+/* harmony import */ var rete__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(rete__WEBPACK_IMPORTED_MODULE_0__);
+
+var anySocket = new rete__WEBPACK_IMPORTED_MODULE_0__["Socket"]('Any');
+var numSocket = new rete__WEBPACK_IMPORTED_MODULE_0__["Socket"]('Number value');
+numSocket.combineWith(anySocket);
+var jsonSocket = new rete__WEBPACK_IMPORTED_MODULE_0__["Socket"]('JSON');
+jsonSocket.combineWith(anySocket);
+var xmlSocket = new rete__WEBPACK_IMPORTED_MODULE_0__["Socket"]('XML');
+xmlSocket.combineWith(anySocket);
+
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/toolbox/toolbox.component.html":
+/*!*********************************************************************!*\
+  !*** ./src/app/features/flow-editor/toolbox/toolbox.component.html ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div layout-root>\n    <mat-accordion>\n        <mat-nav-list dense>\n            <div *ngFor=\"let item of components\">\n                <mat-list-item mat-line role=\"option\" [disableRipple]=\"true\" draggable [dragData]=\"item\">{{ item.name }}</mat-list-item>\n            </div>\n        </mat-nav-list>\n    </mat-accordion>\n</div>\n"
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/toolbox/toolbox.component.scss":
+/*!*********************************************************************!*\
+  !*** ./src/app/features/flow-editor/toolbox/toolbox.component.scss ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "[layout-root] {\n  box-sizing: border-box;\n  width: 100%;\n  height: 100%; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZmVhdHVyZXMvZmxvdy1lZGl0b3IvdG9vbGJveC90b29sYm94LmNvbXBvbmVudC5zY3NzIiwic3JjL2FwcC9mZWF0dXJlcy9mbG93LWVkaXRvci90b29sYm94L0M6XFxQcm9qZWN0c1xcUmhvb3N0ZXJcXEZvcm1CdWlsZGVyXFxGb3JtQnVpbGRlci9zcmNcXGFwcFxcZmVhdHVyZXNcXGZsb3ctZWRpdG9yXFx0b29sYm94XFx0b29sYm94LmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VDRUksdUJBQXNCO0VBQ3RCLFlBQVc7RUFDWCxhQUFZLEVBQ2YiLCJmaWxlIjoic3JjL2FwcC9mZWF0dXJlcy9mbG93LWVkaXRvci90b29sYm94L3Rvb2xib3guY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJbbGF5b3V0LXJvb3RdIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogMTAwJTsgfVxuIiwiXHJcbltsYXlvdXQtcm9vdF0ge1xyXG4gICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcclxuICAgIHdpZHRoOiAxMDAlO1xyXG4gICAgaGVpZ2h0OiAxMDAlO1xyXG59XHJcbiJdfQ== */"
+
+/***/ }),
+
+/***/ "./src/app/features/flow-editor/toolbox/toolbox.component.ts":
+/*!*******************************************************************!*\
+  !*** ./src/app/features/flow-editor/toolbox/toolbox.component.ts ***!
+  \*******************************************************************/
+/*! exports provided: ToolboxComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ToolboxComponent", function() { return ToolboxComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ToolboxComponent = /** @class */ (function () {
+    function ToolboxComponent() {
+        this.components = [
+            {
+                name: 'Debug',
+                component: 'Debug'
+            },
+            {
+                name: 'JSON',
+                component: 'JSON'
+            },
+            {
+                name: 'Template',
+                component: 'Template'
+            },
+            {
+                name: 'Http Get',
+                component: 'HttpGet'
+            }
+        ];
+    }
+    ToolboxComponent.prototype.ngOnInit = function () {
+    };
+    ToolboxComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-toolbox',
+            template: __webpack_require__(/*! ./toolbox.component.html */ "./src/app/features/flow-editor/toolbox/toolbox.component.html"),
+            styles: [__webpack_require__(/*! ./toolbox.component.scss */ "./src/app/features/flow-editor/toolbox/toolbox.component.scss")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ToolboxComponent);
+    return ToolboxComponent;
 }());
 
 

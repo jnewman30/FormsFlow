@@ -2,12 +2,14 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    // overflow: hidden;
 
-    [tool-pallete] {
+    .editor-drawer-container {
         width: 100%;
         height: 100%;
-        box-sizing: border-box;
-        padding: 0.25rem;
+        overflow: hidden;
+    }
+
+    .tool-drawer {
+        width: 256px;
     }
 }

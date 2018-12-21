@@ -1,9 +1,9 @@
 <div layout-root>
     <mat-accordion>
-        <mat-list dense>
+        <mat-nav-list dense>
             <div *ngFor="let item of components">
-                <mat-list-item mat-line role="option" draggable [dragData]="item">{{ item.name }}</mat-list-item>
+                <mat-list-item mat-line role="option" [disableRipple]="true" draggable [dragData]="item">{{ item.name }}</mat-list-item>
             </div>
-        </mat-list>
+        </mat-nav-list>
     </mat-accordion>
 </div>

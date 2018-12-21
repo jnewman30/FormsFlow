@@ -9,6 +9,10 @@ export class ToolboxComponent implements OnInit {
 
     components = [
         {
+            name: 'Debug',
+            component: 'Debug'
+        },
+        {
             name: 'JSON',
             component: 'JSON'
         },
@@ -17,8 +21,8 @@ export class ToolboxComponent implements OnInit {
             component: 'Template'
         },
         {
-            name: 'Debug',
-            component: 'Debug'
+            name: 'Http Get',
+            component: 'HttpGet'
         }
     ];
 

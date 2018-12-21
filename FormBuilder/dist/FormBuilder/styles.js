@@ -11,6 +11,17 @@ module.exports = [[module.i, ".mat-badge-content{font-weight:600;font-size:12px;
 
 /***/ }),
 
+/***/ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/ng-drag-drop/style.css":
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./node_modules/ng-drag-drop/style.css ***!
+  \**************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = [[module.i, "\r\n/* Draggable*/\r\n\r\n.drag-border {\r\n    border: #ff525b dashed 2px;\r\n}\r\n\r\n.drag-handle {\r\n    cursor: move; /* fallback if grab cursor is unsupported */\r\n    cursor: grab;\r\n    cursor: -webkit-grab;\r\n}\r\n\r\n.drag-handle:active { \r\n    cursor: grabbing;\r\n    cursor: -webkit-grabbing;\r\n}\r\n\r\n/* Droppable */\r\n\r\n.drag-hint-border {\r\n    border: #3c763d dashed 2px;\r\n}\r\n\r\n.drag-over-border {\r\n    border: #fbbc05 dashed 2px;\r\n}\r\n\r\n.drag-transit {\r\n    border: #3500FF dashed 2px;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9uZy1kcmFnLWRyb3Avc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQSxjQUFjOztBQUVkO0lBQ0ksMkJBQTJCO0NBQzlCOztBQUVEO0lBQ0ksYUFBYSxDQUFDLDRDQUE0QztJQUMxRCxhQUFhO0lBRWIscUJBQXFCO0NBQ3hCOztBQUVEO0lBQ0ksaUJBQWlCO0lBRWpCLHlCQUF5QjtDQUM1Qjs7QUFFRCxlQUFlOztBQUVmO0lBQ0ksMkJBQTJCO0NBQzlCOztBQUVEO0lBQ0ksMkJBQTJCO0NBQzlCOztBQUVEO0lBQ0ksMkJBQTJCO0NBQzlCIiwiZmlsZSI6Im5vZGVfbW9kdWxlcy9uZy1kcmFnLWRyb3Avc3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXHJcbi8qIERyYWdnYWJsZSovXHJcblxyXG4uZHJhZy1ib3JkZXIge1xyXG4gICAgYm9yZGVyOiAjZmY1MjViIGRhc2hlZCAycHg7XHJcbn1cclxuXHJcbi5kcmFnLWhhbmRsZSB7XHJcbiAgICBjdXJzb3I6IG1vdmU7IC8qIGZhbGxiYWNrIGlmIGdyYWIgY3Vyc29yIGlzIHVuc3VwcG9ydGVkICovXHJcbiAgICBjdXJzb3I6IGdyYWI7XHJcbiAgICBjdXJzb3I6IC1tb3otZ3JhYjtcclxuICAgIGN1cnNvcjogLXdlYmtpdC1ncmFiO1xyXG59XHJcblxyXG4uZHJhZy1oYW5kbGU6YWN0aXZlIHsgXHJcbiAgICBjdXJzb3I6IGdyYWJiaW5nO1xyXG4gICAgY3Vyc29yOiAtbW96LWdyYWJiaW5nO1xyXG4gICAgY3Vyc29yOiAtd2Via2l0LWdyYWJiaW5nO1xyXG59XHJcblxyXG4vKiBEcm9wcGFibGUgKi9cclxuXHJcbi5kcmFnLWhpbnQtYm9yZGVyIHtcclxuICAgIGJvcmRlcjogIzNjNzYzZCBkYXNoZWQgMnB4O1xyXG59XHJcblxyXG4uZHJhZy1vdmVyLWJvcmRlciB7XHJcbiAgICBib3JkZXI6ICNmYmJjMDUgZGFzaGVkIDJweDtcclxufVxyXG5cclxuLmRyYWctdHJhbnNpdCB7XHJcbiAgICBib3JkZXI6ICMzNTAwRkYgZGFzaGVkIDJweDtcclxufSJdfQ== */", '', '']]
+
+/***/ }),
+
 /***/ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/prism-themes/themes/prism-vs.css":
 /*!************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src??embedded!./node_modules/prism-themes/themes/prism-vs.css ***!
@@ -56,6 +67,36 @@ options.transform = transform
 options.insertInto = undefined;
 
 var update = __webpack_require__(/*! ../../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/ng-drag-drop/style.css":
+/*!*********************************************!*\
+  !*** ./node_modules/ng-drag-drop/style.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!../postcss-loader/src??embedded!./style.css */ "./node_modules/@angular-devkit/build-angular/src/angular-cli-files/plugins/raw-css-loader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/ng-drag-drop/style.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
 
 if(content.locals) module.exports = content.locals;
 
@@ -631,14 +672,15 @@ if(false) {}
 /***/ }),
 
 /***/ 2:
-/*!*****************************************************************************************************************************************************!*\
-  !*** multi ./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css ./node_modules/prism-themes/themes/prism-vs.css ./src/styles.scss ***!
-  \*****************************************************************************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** multi ./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css ./node_modules/prism-themes/themes/prism-vs.css ./node_modules/ng-drag-drop/style.css ./src/styles.scss ***!
+  \*******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\Projects\Rhooster\FormBuilder\FormBuilder\node_modules\@angular\material\prebuilt-themes\deeppurple-amber.css */"./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css");
 __webpack_require__(/*! C:\Projects\Rhooster\FormBuilder\FormBuilder\node_modules\prism-themes\themes\prism-vs.css */"./node_modules/prism-themes/themes/prism-vs.css");
+__webpack_require__(/*! C:\Projects\Rhooster\FormBuilder\FormBuilder\node_modules\ng-drag-drop\style.css */"./node_modules/ng-drag-drop/style.css");
 module.exports = __webpack_require__(/*! C:\Projects\Rhooster\FormBuilder\FormBuilder\src\styles.scss */"./src/styles.scss");
 
 

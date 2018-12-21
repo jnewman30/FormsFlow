@@ -9,13 +9,21 @@ import { NgDragDropModule } from 'ng-drag-drop';
 
 import {
     MatCommonModule,
+    MatSidenavModule,
     MatButtonModule,
     MatIconModule,
     MatCardModule,
     MatListModule,
     MatExpansionModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatDividerModule
 } from '@angular/material';
+
+import {
+    CovalentCommonModule,
+    CovalentLayoutModule
+} from '@covalent/core';
+
 import { ToolboxComponent } from './toolbox/toolbox.component';
 
 @NgModule({
@@ -32,12 +40,17 @@ import { ToolboxComponent } from './toolbox/toolbox.component';
 
         FlexLayoutModule,
         MatCommonModule,
+        MatSidenavModule,
         MatButtonModule,
         MatIconModule,
         MatCardModule,
         MatListModule,
         MatExpansionModule,
-        MatToolbarModule
+        MatToolbarModule,
+        MatDividerModule,
+
+        CovalentCommonModule,
+        CovalentLayoutModule
     ],
     providers: [],
 })

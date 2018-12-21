@@ -12,12 +12,14 @@ import { AddComponent } from './components/add-component';
 import { JsonComponent } from './components/json-component';
 import { DebugComponent } from './components/debug-component';
 import { TemplateComponent } from './components/template-component';
+import { HttpGetComponent } from './components/http-get-component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
     selector: 'app-rete',
-    template: '<div class="wrapper"><div #nodeEditor class="node-editor"></div></div>',
+    template: '<div wrapper fxLayout="column"><div #nodeEditor node-editor fxFlex></div></div>',
     styleUrls: ['./rete.component.scss'],
-    encapsulation: ViewEncapsulation.None
+    // encapsulation: ViewEncapsulation.None
 })
 
 export class ReteComponent implements AfterViewInit {
@@ -30,7 +32,7 @@ export class ReteComponent implements AfterViewInit {
 
     @Input() flow = {};
 
-    constructor() {
+    constructor(private http: HttpClient) {
         console.log('Rete Component');
     }
 
@@ -38,11 +40,12 @@ export class ReteComponent implements AfterViewInit {
         const container = this.el.nativeElement;
 
         this.components = [
+            new JsonComponent(),
+            new HttpGetComponent(this.http),
+            new TemplateComponent(),
+            new DebugComponent(),
             new NumComponent(),
             new AddComponent(),
-            new JsonComponent(),
-            new DebugComponent(),
-            new TemplateComponent()
         ];
 
         this.editor = new NodeEditor('demo@0.2.0', container);

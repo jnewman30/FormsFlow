@@ -6,6 +6,19 @@ var http = require('http');
 
 const formStorage = path.join(__dirname, '../public/form-storage/')
 
+router.get('/:formId', function(req, res, next) {
+    const formId = req.params.formId;
+    const fileName = path.join(formStorage, `${formId}Data.json`);
+    fs.readFile(fileName, (err, data) => {
+        if (!err) {
+            res.setHeader('Content-Type', 'application/json');
+            res.send(data);
+        } else {
+            res.send({ error: err });
+        }
+    });
+});
+
 router.post('/', function (req, res, next) {
     const formJson = JSON.stringify(req.body, null, 2);
     const fileName = path.join(formStorage, 'form1Data.json');
